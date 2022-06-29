@@ -1,0 +1,129 @@
+{
+  "main": {
+    "name": "Juan Pablo Mantilla",
+    "occupation": "",
+    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "image": "profilepic.jpg",
+    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "youremailhere@gmail.com",
+    "phone": "555-555-5555",
+    "address": {
+      "street": "(Your Street)",
+      "city": "(Your City)",
+      "state": "(Your State)",
+      "zip": "(Your Zip/Postal Code)"
+    },
+    "website": "https://jpmantilla.herokuapp.com/custom",
+    "resumedownload": "http://timbakerdev.com",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/JP235",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Univeritat de Barcelona",
+        "degree": "Bachelor's Degree in Biomedical Engineering",
+        "graduated": "2014 - 2018",
+        "description": ["Excelled in Modeling of biological systems, Innovation and  Creativity in Organizations coursework. "," Awarded for “The Best solution developed to address the needs of a health information system based on continuity of care” in the Medical Informatics and Telemedicine course. "," Dissertation: “Modeling and Control of Anesthetic Drug Effects on Physiological Signals Using Neural Networks.” Advisor: Dr. Pedro Gambús"]
+    },
+      {
+        "school": "Univeritat de Barcelona",
+        "degree": "Master's Degree in Innovation and Entrepreneurship in Biomedical Engineering",
+        "graduated": "2018 - 2019",
+        "description":[ "Excelled in Machine learning, Financial management of biomedical firms, Management of Innovation and Entrepreneurship  coursework"]
+      }
+    ],
+    "work": [
+      {
+        "company": "Quantum Medical - Universitat de  Barcelona",
+        "title": "R&D Engineer",
+        "years": "October 2017 - July 2019",
+        "description": ["Defined and standardized protocol to extract and pre-process data from 10 years worth of patients records.","Implemented several Artificial Neural Networks to predict sedation effect of anesthetic drugs and control doses in real time. Participated in data collection in ORs, following OR and clean room procedures"]
+      },
+      {
+        "company": "Various",
+        "title": "Freelance IT ",
+        "years": "March 2007 - February 2010",
+        "description": ["Created an automatic page navigation system based on Microsoft Edge Read Aloud."," Developed and maintained Backend and Frontend for web game using Django and ReactJS.","Experience in Unit Testing, DB management (SQLite, MySQL, PostgreSQL), Token based Authentication, Algorithms design and implementation"]
+      },
+      {
+        "company": "MantEch",
+        "title": "Co-founder",
+        "years": "April 2020 - Present",
+        "description": ["Market analysis","Defining Value Proposition", "Creating Business and Financial plan"]
+      }
+    ],
+    "skills": [
+    {
+        "name": "Python",
+        "level": "95%"
+    },
+      {
+        "name": "LabVIEW",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "85%"
+      },
+      {
+        "name": "Django",
+        "level": "80%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "70%"
+      },
+      {
+        "name": "TensorFlow/Keras",
+        "level": "75%"
+      },
+      {
+        "name": "R",
+        "level": "75%"
+      },
+      {
+        "name": "CSS",
+        "level": "50%"
+      },
+      {
+        "name": "HTML5",
+        "level": "50%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "KlotskiBlocks",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "canadian-wanderlust.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      }
+      
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
