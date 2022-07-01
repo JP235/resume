@@ -47,7 +47,7 @@ function App() {
 			<About data={resumeData.main} lang = {lang} />
 			<Resume data={resumeData.resume} lang = {lang} />
 			<Portfolio data={resumeData.portfolio} lang = {lang} />
-			<Achievements data={resumeData.testimonials} lang = {lang} />
+			<Achievements data={resumeData.achievements} lang = {lang} />
 			<Contact data={resumeData.main} lang = {lang} />
 			<Footer data={resumeData.main} lang = {lang} />
 		</div>
