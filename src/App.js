@@ -1,61 +1,57 @@
-import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import $ from 'jquery';
-import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
-import Portfolio from './Components/Portfolio';
+import React, { useState, useEffect } from "react";
+import $ from "jquery";
+import "./App.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Achievements from "./Components/Testimonials";
+import Portfolio from "./Components/Portfolio";
 
-class App extends Component {
+function App() {
+	const [resumeData, setResumeData] = useState([]);
+	const [lang, setLang] = useState("en");
 
-  constructor(props){
-    super(props);
-    this.state = {
-      foo: 'bar',
-      resumeData: {}
-    };
+	const changeLanguage = () => {
+		if (lang === "en") {
+      setLang("es");
+		}else if (lang === "es") {
+		  setLang("en");
+		}
+	};
 
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
+	const getResumeData = () => {
+		$.ajax({
+			url: lang === "en" ? "/resumeData.json" : "/resumeData_es.json",
+			// url: "/resumeData.json",
+			dataType: "json",
+			cache: false,
+			success: function (data) {
+				setResumeData(data);
+			},
+			error: function (xhr, status, err) {
+				console.log(err);
+				alert(err);
+			},
+		});
+	};
 
-  }
+	useEffect(() => {
+		getResumeData();
+	}, [lang]);
 
-  getResumeData(){
-    $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
-
-  componentDidMount(){
-    this.getResumeData();
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
-      </div>
-    );
-  }
+	return (
+		<div className="App">
+			<Header data={resumeData.main} languageSelect={changeLanguage} lang = {lang}/>
+			<About data={resumeData.main} lang = {lang} />
+			<Resume data={resumeData.resume} lang = {lang} />
+			<Portfolio data={resumeData.portfolio} lang = {lang} />
+			<Achievements data={resumeData.testimonials} lang = {lang} />
+			<Contact data={resumeData.main} lang = {lang} />
+			<Footer data={resumeData.main} lang = {lang} />
+		</div>
+	);
 }
 
 export default App;

@@ -28,77 +28,77 @@
     "resume": {
         "education": [{
                 "school": "Universitat de Barcelona",
-                "degree": "Bachelor's Degree in Biomedical Engineering",
+                "degree": "Grado en Ingeniería Biomédica",
                 "graduated": "2014 - 2018",
-                "description": ["Excelled in Modeling of biological systems, Innovation and  Creativity in Organizations coursework. ",  " Dissertation: “Modeling and Control of Anesthetic Drug Effects on Physiological Signals Using Neural Networks.” Advisor: Dr. Pedro Gambús"]
+                "description": ["Sobresaliente en clases de Modelación de Sistemas Biológicos, Innovacion y Creatividad en organizaciones", "Tesis: Modelación y Control de Efectos de Drogas Anesteticas utilizando Redes Neuronales Artificiales"]
             },
             {
                 "school": "Universitat de Barcelona",
-                "degree": "Master's Degree in Innovation and Entrepreneurship in Biomedical Engineering",
+                "degree": "Master en Innovación y Emprendimiento en Ingeniería Biomédica",
                 "graduated": "2018 - 2019",
-                "description": ["Excelled in Machine learning, Financial management of biomedical firms, Management of Innovation and Entrepreneurship  coursework"]
+                "description": ["Sobresaliente en Machine learning, Manejo Financiero de Firmas Biomédicas, Manejo de la Innovacion y Emprendimiento"]
             }
         ],
         "work": [
             {
                 "company": "MantEch",
-                "title": "Co-founder  ",
-                "years": "February 2020 - Present",
-                "description": ["Market analysis", "Defining Value Proposition", "Creating Business and Financial plan"]
+                "title": "Co-fundador  ",
+                "years": "Febrero 2020 - Presente",
+                "description": ["Analysis de mercado", "Definicion de proposición de valor ", "Creacion de plan de negocios y plan finaciero"]
             },
             {
                 "company": "Various",
                 "title": "Freelance IT ",
-                "years": "2020 - Present",
+                "years": "2020 - Presente",
                 "description": ["Created an automatic page navigation system based on Microsoft Edge Read Aloud.", " Developed and maintained Backend and Frontend for web game using Django and ReactJS.", "Experience in Unit Testing, DB management (SQLite, MySQL, PostgreSQL), Token based Authentication, Algorithms design and implementation"]
             },
             {
                 "company": "Quantum Medical - Universitat de  Barcelona",
-                "title": "R&D Engineer",
+                "title": "Ingeniero de I+D",
                 "years": "October 2017 - July 2019",
                 "description": ["Defined and standardized protocol to extract and pre-process data from 10 years worth of patients records.", "Implemented several Artificial Neural Networks to predict sedation effect of anesthetic drugs and control doses in real time. Participated in data collection in ORs, following OR and clean room procedures"]
             }
         ],
         "skills": [{
-            "name": "Python",
-            "level": "95%"
-        },
-        {
-            "name": "LabVIEW",
-            "level": "80%"
-        },
-        {
-            "name": "JavaScript",
-            "level": "85%"
-        },
-        {
-            "name": "Django",
-            "level": "80%"
-        },
-        {
-            "name": "ReactJs",
-            "level": "70%"
-        },
-        {
-            "name": "DB Management",
-            "level": "85%"
-        },
-        {
-            "name": "TensorFlow/Keras",
-            "level": "75%"
-        },
-        {
-            "name": "R",
-            "level": "75%"
-        },
-        {
-            "name": "CSS",
-            "level": "60%"
-        },
-        {
-            "name": "HTML5",
-            "level": "60%"
-        }
+                "name": "Python",
+                "level": "95%"
+            },
+            {
+                "name": "LabVIEW",
+                "level": "80%"
+            },
+            {
+                "name": "JavaScript",
+                "level": "85%"
+            },
+            {
+                "name": "Django",
+                "level": "80%"
+            },
+            {
+                "name": "ReactJs",
+                "level": "70%"
+            },
+            {
+                "name": "DB Management",
+                "level": "85%"
+            },
+            {
+                "name": "TensorFlow/Keras",
+                "level": "75%"
+            },
+            {
+                "name": "R",
+                "level": "75%"
+            },
+            {
+                "name": "CSS",
+                "level": "60%"
+            },
+            {
+                "name": "HTML5",
+                "level": "60%"
+            }
         ]
     },
     "portfolio": {
