@@ -2,10 +2,12 @@
     "main": {
         "name": "Juan Pablo Mantilla",
         "occupation": "",
-        "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+        "description": "Hello! I'm Juan Pablo, Biomedical Engineer turned Programmer.",
         "image": "profilepic.png",
-        "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-        "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+        "bio": ["I have 4 years of experience working mostly in data science, image processing and machine learning.","\n",
+            " Lately I've been very interested in web development, diving into both backend and frontend development"],
+        "contactmessage": " \n If you want to get in touch with me, send me an email at jpmanti@gmail.com, I'd be happy to answer your questions. \n",
+
         "email": "jpmanti@gmail.com",
         "phone": "(+57) 304 6344936",
         "address": {
@@ -49,7 +51,7 @@
                 "company": "Various",
                 "title": "Freelance IT ",
                 "years": "2020 - Present",
-                "description": ["Created an automatic page navigation system based on Microsoft Edge Read Aloud.", " Developed and maintained Backend and Frontend for web game using Django and ReactJS.", "Experience with Unit Testing, DB management (SQLite, MySQL, PostgreSQL), Token based Authentication, Algorithm design and implementation"]
+                "description": ["Created an automatic page navigation system based on Microsoft Edge Read Aloud.", " Developed and maintained Backend and Frontend for web game using Django and ReactJS.", "Unit Testing","DB management (SQLite, MySQL, PostgreSQL)"," Token based Authentication","Algorithm design and implementation"]
             },
             {
                 "company": "Quantum Medical - Universitat de  Barcelona",
@@ -125,7 +127,7 @@
                     "level": "60%"
                 },
                 {
-                    "name": "Financial Planing Management",
+                    "name": "Financial Planning Management",
                     "level": "60%"
                 },
                 {
