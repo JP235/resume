@@ -66,19 +66,15 @@ class Header extends Component {
 							</a>
 						</li>
 						<a
-							className="smoothscroll lang-select"
-							href="#home"
+							className="lang-select"
+							href="#current"
 							onClick={() => this.props.languageSelect()}
 						>
-							<span
-								color={
-									this.props.lang === "es"
-										? "#11ABB0"
-										: "white"
-								}
-							>
-								{this.props.lang === "en" ? "EN" : "ES"}
-							</span>
+							{this.props.lang === "en" ? (
+								<span color="white"> EN</span>
+							) : (
+								<span color="#11ABB0"> ES</span>
+							)}
 						</a>
 					</ul>
 				</nav>

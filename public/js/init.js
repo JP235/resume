@@ -25,11 +25,12 @@
 	    var target = this.hash,
 	    $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
+       $('html, body').stop().animate({
+           'scrollTop': $target.offset().top
+       }, 800, 'swing', function () {
+           window.location.hash = target;
+       });
+    
 	});
 
 
@@ -51,9 +52,10 @@
 
 			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
-         navigation_links.parent().removeClass("current");
+      navigation_links.parent().removeClass("current");
 			active_link.parent().addClass("current");
-
+      sections.removeClass("current");
+      active_section.addClass("current")
 		},
 		offset: '35%'
 
