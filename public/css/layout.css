@@ -210,6 +210,13 @@ ul#nav li.current a {
 	color: #f06000;
 }
 
+.lang-selector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 13px;
+    line-height: 32px;
+}
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */

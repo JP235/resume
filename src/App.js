@@ -9,21 +9,23 @@ import Contact from "./Components/Contact";
 import Achievements from "./Components/Achievements";
 import Portfolio from "./Components/Portfolio";
 
+export const LanguageContext = React.createContext();
+
 function App() {
 	const [resumeData, setResumeData] = useState([]);
-	const [lang, setLang] = useState("en");
+	const [language, setLanguage] = useState("en");
 
 	const changeLanguage = () => {
-		if (lang === "en") {
-      setLang("es");
-		}else if (lang === "es") {
-		  setLang("en");
+		if (language === "en") {
+			setLanguage("es");
+		} else if (language === "es") {
+			setLanguage("en");
 		}
 	};
 
-	const getResumeData = () => {
+	const getResumeData = (language) => {
 		$.ajax({
-			url: lang === "en" ? "/resumeData.json" : "/resumeData_es.json",
+			url: language === "en" ? "/resumeData.json" : "/resumeData_es.json",
 			// url: "/resumeData.json",
 			dataType: "json",
 			cache: false,
@@ -38,19 +40,24 @@ function App() {
 	};
 
 	useEffect(() => {
-		getResumeData();
-	}, [lang]);
+		getResumeData(language);
+	}, [language]);
 
 	return (
-		<div className="App">
-			<Header data={resumeData.main} languageSelect={changeLanguage} lang = {lang}/>
-			<About data={resumeData.main} lang = {lang} />
-			<Resume data={resumeData.resume} lang = {lang} />
-			<Portfolio data={resumeData.portfolio} lang = {lang} />
-			<Achievements data={resumeData.achievements} lang = {lang} />
-			<Contact data={resumeData.main} lang = {lang} />
-			<Footer data={resumeData.main} lang = {lang} />
-		</div>
+		<LanguageContext.Provider value={language}>
+			<div className="App">
+				<Header
+					data={resumeData.main}
+					languageSelect={changeLanguage}
+				/>
+				<About data={resumeData.main} />
+				<Resume data={resumeData.resume} />
+				<Portfolio data={resumeData.portfolio} />
+				<Achievements data={resumeData.achievements} />
+				<Contact data={resumeData.main} />
+				<Footer data={resumeData.main} />
+			</div>
+		</LanguageContext.Provider>
 	);
 }
 

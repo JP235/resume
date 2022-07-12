@@ -1,127 +1,84 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { LanguageContext } from "../App";
+import {
+	ListDisplay,
+	BarDisplay,
+	HeaderAndList,
+	HeaderAndBars,
+} from "./ElementsDisplay";
+import { ResumeTitles } from "./Titiles";
 
-const ListedThings = (props) => {
-	if (props.elem.length > 0) {
-		return (
-			<ul>
-				{props.elem.map((thing, index) => {
-					return <li key={index}>{thing}</li>;
-				})}
-			</ul>
-		);
-	}
-};
+function Resume(props) {
+	const [education, setEducation] = useState([]);
+	const [work, setWork] = useState();
+	const [techSkills, setTechSkills] = useState();
+	const [otherSkills, setOtherSkills] = useState();
 
-class Resume extends Component {
-	render() {
-		if (this.props.data) {
-			var education = this.props.data.education.map(function (
-				education,
-				index
-			) {
-				return (
-					<div key={index}>
-						<h3>{education.school}</h3>
-						<p className="info">
-							{education.degree} <span>&bull;</span>
-							<em className="date">{education.graduated}</em>
-						</p>
-						<ListedThings elem={education.description} />
-					</div>
-				);
-			});
-			var work = this.props.data.work.map(function (work, index) {
-				return (
-					<div key={index}>
-						<h3>{work.company}</h3>
-						<p className="info">
-							{work.title}
-							<span>&bull;</span>{" "}
-							<em className="date">{work.years}</em>
-						</p>
-						<ListedThings elem={work.description} />
-					</div>
-				);
-			});
-			var tech_skills = this.props.data.skills.tech.map(function (
-				skills
-			) {
-				var className = "bar-expand " + skills.name.toLowerCase();
-				return (
-					<li key={skills.name}>
-						<span
-							style={{ width: skills.level }}
-							className={className}
-						></span>
-						<em>{skills.name}</em>
-					</li>
-				);
-			});
-			var not_tech_skills = this.props.data.skills.not_tech.map(function (
-				skills
-			) {
-				var className = "bar-expand " + skills.name.toLowerCase();
-				return (
-					<li key={skills.name}>
-						<span
-							style={{ width: skills.level }}
-							className={className}
-						></span>
-						<em>{skills.name}</em>
-					</li>
-				);
-			});
+	const language = useContext(LanguageContext);
+
+	useEffect(() => {
+		if (props.data) {
+			var educ = props.data.education.map((education, index) =>
+				ListDisplay(
+					index,
+					education.school,
+					education.degree,
+					education.graduated,
+					education.description
+				)
+			);
+			var w = props.data.work.map((work, index) =>
+				ListDisplay(
+					index,
+					work.company,
+					work.title,
+					work.years,
+					work.description
+				)
+			);
+
+			var tsk = props.data.skills.tech.map((skill) => BarDisplay(skill, "#7E91B4"));
+			var osk = props.data.skills.not_tech.map((skill) =>
+				BarDisplay(skill, "#7DA3C7")
+			);
+			// var langs = props.data.languages.map((skill) => barDisplay(skill,"#E6A69D"));
 		}
+		setEducation(educ);
+		setWork(w);
+		setTechSkills(tsk);
+		setOtherSkills(osk);
+		// setLanguages(l);
+	}, [props.data]);
 
-		return (
-			<section id="resume">
-				<div className="row work">
-					<div className="three columns header-col">
-						<h1>
-							<span>Work</span>
-						</h1>
-					</div>
-					<div className="nine columns main-col">{work}</div>
-				</div>
-				<div className="row education">
-					<div className="three columns header-col">
-						<h1>
-							<span>Education</span>
-						</h1>
-					</div>
-
-					<div className="nine columns main-col">
-						<div className="row item">
-							<div className="twelve columns">{education}</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="row skill">
-					<div className="three columns header-col">
-						<h1>
-							<span>Tech Skills</span>
-						</h1>
-					</div>
-					<div className="nine columns main-col">
-						<div className="bars">
-							<ul className="skills tech">{tech_skills}</ul>
-						</div>
-					</div>
-					<div className="three columns header-col">
-						<h1>
-							<span>Other Skills</span>
-						</h1>
-					</div>
-					<div className="nine columns main-col">
-						<div className="bars">
-							<ul className="skills tech">{not_tech_skills}</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-		);
-	}
+	return (
+		<section id="resume">
+			<HeaderAndList
+				name="Work"
+				title={ResumeTitles[language]["Work"]}
+				content={work}
+			/>
+			<HeaderAndList
+				name="Education"
+				title={ResumeTitles[language]["Education"]}
+				content={education}
+			/>
+			<HeaderAndBars
+				name="Tech"
+				title={ResumeTitles[language]["Tech Skills"]}
+				content={techSkills}
+			/>
+			<HeaderAndBars
+				name="Other"
+				title={ResumeTitles[language]["Other Skills"]}
+				content={otherSkills}
+			/>
+			{/* <HeaderAndBars
+        name="Languages"
+        title={ResumeTitles[language]["Languages"]}
+        content={languages}
+      /> */}
+		</section>
+	);
 }
 
 export default Resume;
