@@ -58,9 +58,9 @@ export const PortfolioTitles = {
 };
 export const ConstactTitles = {
 	es: {
-		title: "Contacto",
+		title: "Hablemos!",
 	},
 	en: {
-		title: "Get In Touch.",
+		title: "Let's Talk!",
 	},
 };

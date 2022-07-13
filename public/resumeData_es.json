@@ -2,10 +2,10 @@
     "main": {
         "name": "Juan Pablo Mantilla",
         "occupation": "",
-        "description": "Hello! I'm Juan Pablo, Biomedical Engineer turned Programmer. .",
+        "description": "¡Hola! Soy Juan Pablo, Ingeniero Biomédico convertido en Programador.",
         "image": "profilepic.png",
-        "bio": "I have 4 years of experience working mostly in data science, image processing and machine learning. Lately I've been very interested in web development, diving into both backend and frontend development",
-        "contactmessage": "",
+        "bio": "Tengo 4 años de experiencia trabajando principalmente en data science, procesamiento de imágenes y machine learning. Últimamente he estado muy interesado en el desarrollo web, involucrandome tanto en desarrollo de backend como de frontend.",
+        "contactmessage": "Si desean ponerse en contacto conmigo, envíenme un correo electrónico a jpmanti@gmail.com, con gusto responderé sus preguntas.",
         "email": "jpmanti@gmail.com",
         "phone": "(+57) 304 6344936",
         "address": {
@@ -39,8 +39,7 @@
                 "description": ["Sobresaliente en Machine learning, Manejo Financiero de Firmas Biomédicas, Fundaciones Microeconomicas de la Competitividad, Manejo de la Innovacion y Emprendimiento"]
             }
         ],
-        "work": [
-            {
+        "work": [{
                 "company": "MantEch",
                 "title": "Co-fundador  ",
                 "years": "Febrero 2020 - Presente",
@@ -50,13 +49,13 @@
                 "company": "Various",
                 "title": "Freelance IT ",
                 "years": "2020 - Presente",
-                "description": ["Diseño de un sistema de navigacion web automatico basado en Microsoft Edge Read Aloud.", "Desarrollo y mantenimiento del Backend y Frontend de un juego web usando Django y ReactJS", "Unit Testing","Manejo de bases de datos (SQLite, MySQL, PostgreSQL)","Autenticación basada en tokens","Diseño e implementacion de Algoritmos"]
+                "description": ["Diseño de un sistema de navigacion web automatico basado en Microsoft Edge Read Aloud.", "Desarrollo y mantenimiento del Backend y Frontend de un juego web usando Django y ReactJS", "Unit Testing", "Manejo de bases de datos (SQLite, MySQL, PostgreSQL)", "Autenticación basada en tokens", "Diseño e implementacion de Algoritmos"]
             },
             {
                 "company": "Quantum Medical - Universitat de  Barcelona",
                 "title": "Ingeniero I+D",
                 "years": "Octubre 2017 - Julio 2019",
-                "description": ["Defined and standardized protocol to extract and pre-process data from 10 years worth of patients records.", "Implemented several Artificial Neural Networks to predict sedation effect of anesthetic drugs and control doses in real time.","Participated in data collection inside ORs, following OR and clean room procedures"]
+                "description": ["Definicion y estandarizado de protocolo para extraer y preprocesar 10 años de datos de registros de pacientes.", "Implementacion de Redes Neuronales Artificiales para predicción del efecto de sedación de fármacos anestésicos y control las dosis en tiempo real.", "Recopilación de datos dentro de los quirófanos, siguiendo los procedimientos de quirófano y sala limpia."]
             }
         ],
         "skills": {
@@ -106,31 +105,31 @@
                 }
             ],
             "not_tech": [{
-                    "name": "Medical Applications of Engineering",
+                    "name": "Aplicaciones Médicas de la Ingeniería",
                     "level": "95%"
                 },
                 {
-                    "name": "Medical Image Processing (MRI, CT, PET, etc.)",
+                    "name": "Procesamiento de imágenes médicas (MRI, CT, PET, etc.)",
                     "level": "80%"
                 },
                 {
-                    "name": "Clean Room and Operating Room protocols",
+                    "name": "Protocolos de sala limpia y quirófano",
                     "level": "95%"
                 },
                 {
-                    "name": "Biological Systems Modeling",
+                    "name": "Modelado de Sistemas Biológicos",
                     "level": "80%"
                 },
                 {
-                    "name": "Medical Equipment Design",
+                    "name": "Diseño de equipos médicos",
                     "level": "60%"
                 },
                 {
-                    "name": "Financial Planing Management",
+                    "name": "Planificación y gestión financiera",
                     "level": "60%"
                 },
                 {
-                    "name": "Innovation and Entrepreneurship",
+                    "name": "Innovación y emprendedurismo",
                     "level": "85%"
                 }
             ]
@@ -140,29 +139,38 @@
         "projects": [{
                 "title": "KlotskiBlocks (beta)",
                 "category": "Game based on the famous Klotski Puzzle. Get GG block to right place to win.",
-                "image": "klotski_screenshot.png",
+                "image": "klotski_img.png",
                 "url": "https://klotski-game.herokuapp.com/"
+            }, {
+                "title": "AHK media conntrol and productivity tools",
+                "category": "Auto Hot Key sctipts to increase prouctivity and media control.",
+                "image": "AHK_img.png",
+                "url": "https://github.com/JP235/AHK_Scripts"
+            }, {
+                "title": "Morpheus ",
+                "category": "Device to detect sleep phase and setup alarm for out of REM sleep timimg.",
+                "image": "Morph_img.png",
+                "url": "https://github.com/JP235/PROJECT_MRPHUS1"
             }
 
         ]
     },
     "achievements": {
-        "achievements": [
-        {
-            "text": "Awarded “The Best solution developed to address the needs of a Health Information System based on continuity of care” in the Medical Informatics and Telemedicine course"
-        },
-        {
-            "text": "First place in the Autonomous Regions phase of the XXV Olimpiada Española de Biología"
-        },
-        {
-            "text": "Reached the national phase of the Olimpiada Colombiana de Matemáticas 2012, 2013 and 2014"
-        },
-        {
-            "text": "Completed “Biomedical Engineering: Analysis, Computing and   Applications” seminars by CEEIBIS 2016"
-        },
-        {
-            "text": "Excellence Award for outstanding role in HISPAMUN Model UN "
-        }
+        "achievements": [{
+                "text": "Premiado “La Mejor solución desarrollada para atender las necesidades de un Sistema de Información en Salud basado en la continuidad asistencial” en el curso de Informática Médica y Telemedicina."
+            },
+            {
+                "text": "Primer puesto en la fase de Comunidades Autónomas de la XXV Olimpiada Española de Biología."
+            },
+            {
+                "text": "Alcanzó la fase nacional de la Olimpiada Colombiana de Matemáticas 2012, 2013 y 2014."
+            },
+            {
+                "text": "Completó los Seminarios “Ingeniería Biomédica: Análisis, Computación y Aplicaciones” por CEEIBIS 2016."
+            },
+            {
+                "text": "Premio a la Excelencia por papel destacado en HISPAMUN Modelo ONU."
+            }
         ]
     }
 }

@@ -160,7 +160,7 @@ header .scrolldown a:hover {
 #nav-wrap a :last-child {
 	position: absolute;
 	right: 0;
-    padding: 8px 13px;
+	padding: 8px 13px;
 	line-height: 32px;
 }
 #nav-wrap a :last-child :focus {
@@ -211,11 +211,11 @@ ul#nav li.current a {
 }
 
 .lang-selector {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 8px 13px;
-    line-height: 32px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 8px 13px;
+	line-height: 32px;
 }
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -914,22 +914,26 @@ call-to-action .button {
 }
 
 #contact h1 {
-	font: 18px/24px "opensans-bold", sans-serif;
+	font: 24px/28px "opensans-bold", sans-serif;
 	text-transform: uppercase;
+    text-align: center;
+	float: center;
 	letter-spacing: 3px;
 	color: #ebeeee;
-	margin-bottom: 6px;
+	margin-bottom: 30px;
 }
 #contact h1 span {
-	display: none;
+	/* display: none; */
+    min-width: 40px;
+    text-align: center;
+	float: center;
 }
-#contact h1:before {
+#contact h1::before {
 	font-family: "FontAwesome";
-	content: "\f0e0";
-	padding-right: 10px;
+	/* padding-right: 10px; */
 	font-size: 72px;
 	line-height: 72px;
-	text-align: left;
+	text-align: center;
 	float: left;
 	color: #ebeeee;
 }
@@ -940,6 +944,8 @@ call-to-action .button {
 	margin-bottom: 6px;
 }
 #contact p.lead {
+    text-align: center;
+	float: left;
 	font: 18px/36px "opensans-light", sans-serif;
 	padding-right: 3%;
 }
@@ -956,7 +962,6 @@ call-to-action .button {
 	margin: 12px 0;
 	color: #ebeeee;
 	display: inline-block;
-	float: left;
 	width: 26%;
 }
 #contact input,
