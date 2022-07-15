@@ -2,7 +2,7 @@
     "main": {
         "name": "Juan Pablo Mantilla",
         "occupation": "",
-        "description": "¡Hola! Soy Juan Pablo, Ingeniero Biomédico convertido en Programador.",
+        "description": "Hola! Soy Juan Pablo, Ingeniero Biomédico convertido en Programador.",
         "image": "profilepic.png",
         "bio": "Tengo 4 años de experiencia trabajando principalmente en data science, procesamiento de imágenes y machine learning. Últimamente he estado muy interesado en el desarrollo web, involucrandome tanto en desarrollo de backend como de frontend.",
         "contactmessage": "Si desean ponerse en contacto conmigo, envíenme un correo electrónico a jpmanti@gmail.com, con gusto responderé sus preguntas.",
@@ -12,7 +12,7 @@
             "city": "Bogotá, Colombia"
         },
         "website": "https://jpmantilla.herokuapp.com/",
-        "resumedownload": "/CV_JuanPabloMantilla.pdf",
+        "resumedownload": "/CV_JuanPabloMantilla_esp.pdf",
         "social": [{
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/",
@@ -30,13 +30,13 @@
                 "school": "Universitat de Barcelona",
                 "degree": "Grado en Ingeniería Biomédica",
                 "graduated": "2014 - 2018",
-                "description": ["Sobresaliente en clases de Modelación de Sistemas Biológicos, Innovacion y Creatividad en organizaciones", "Tesis: Modelación y Control de Efectos de Drogas Anesteticas utilizando Redes Neuronales Artificiales"]
+                "description": ["Sobresaliente en clases de Modelación de Sistemas Biológicos, Innovación y Creatividad en organizaciones.", "Tesis: “Modelación y Control de Efectos de Drogas Anestésicas utilizando Redes Neuronales Artificiales.” "]
             },
             {
                 "school": "Universitat de Barcelona",
                 "degree": "Master en Innovación y Emprendimiento en Ingeniería Biomédica",
                 "graduated": "2018 - 2019",
-                "description": ["Sobresaliente en Machine learning, Manejo Financiero de Firmas Biomédicas, Fundaciones Microeconomicas de la Competitividad, Manejo de la Innovacion y Emprendimiento"]
+                "description": ["Sobresaliente en Machine Learning, Manejo Financiero de Firmas Biomédicas, Fundaciones Microeconómicas de la Competitividad, Manejo de la Innovación y Emprendimiento."]
             }
         ],
         "work": [{
@@ -46,16 +46,16 @@
                 "description": ["Analysis de mercado", "Definicion de proposición de valor ", "Creacion de plan de negocios y plan finaciero"]
             },
             {
-                "company": "Various",
+                "company": "Varios",
                 "title": "Freelance IT ",
                 "years": "2020 - Presente",
-                "description": ["Diseño de un sistema de navigacion web automatico basado en Microsoft Edge Read Aloud.", "Desarrollo y mantenimiento del Backend y Frontend de un juego web usando Django y ReactJS", "Unit Testing", "Manejo de bases de datos (SQLite, MySQL, PostgreSQL)", "Autenticación basada en tokens", "Diseño e implementacion de Algoritmos"]
+                "description": ["Diseño de un sistema de navigacion web automatico basado en Microsoft Edge Read Aloud.", "Desarrollo y mantenimiento del Backend y Frontend de un juego web usando Django y ReactJS", "Unit Testing", "Gestión de BBDD  (PostgreSQL, MySQL, SQLite)", "Autenticación basada en tokens", "Diseño e implementacion de Algoritmos"]
             },
             {
                 "company": "Quantum Medical - Universitat de  Barcelona",
                 "title": "Ingeniero I+D",
                 "years": "Octubre 2017 - Julio 2019",
-                "description": ["Definicion y estandarizado de protocolo para extraer y preprocesar 10 años de datos de registros de pacientes.", "Implementacion de Redes Neuronales Artificiales para predicción del efecto de sedación de fármacos anestésicos y control las dosis en tiempo real.", "Recopilación de datos dentro de los quirófanos, siguiendo los procedimientos de quirófano y sala limpia."]
+                "description": ["Definición y estandarizado de protocolos para extraer y pre-procesar 10 años de datos de registros de pacientes.", "Implementación de Redes Neuronales Artificiales para predicción del efecto de sedación de fármacos anestésicos y control de dosis en tiempo real.", "Recopilación de datos dentro de quirófanos."]
             }
         ],
         "skills": {
@@ -131,6 +131,19 @@
                 {
                     "name": "Innovación y emprendedurismo",
                     "level": "85%"
+                }
+            ],
+            "languages": [{
+                    "name": "Español",
+                    "level": "100%"
+                },
+                {
+                    "name": "Inglés",
+                    "level": "100%"
+                },
+                {
+                    "name": "Catalán",
+                    "level": "65%"
                 }
             ]
         }

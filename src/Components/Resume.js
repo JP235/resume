@@ -13,6 +13,7 @@ function Resume(props) {
 	const [work, setWork] = useState();
 	const [techSkills, setTechSkills] = useState();
 	const [otherSkills, setOtherSkills] = useState();
+	const [langs, setLangs] = useState();
 
 	const language = useContext(LanguageContext);
 
@@ -41,13 +42,14 @@ function Resume(props) {
 			var osk = props.data.skills.not_tech.map((skill) =>
 				BarDisplay(skill, "#7DA3C7")
 			);
-			// var langs = props.data.languages.map((skill) => barDisplay(skill,"#E6A69D"));
+			var l = props.data.skills.languages.map((skill) => BarDisplay(skill,"#E6A69D"));
 		}
 		setEducation(educ);
 		setWork(w);
 		setTechSkills(tsk);
 		setOtherSkills(osk);
-		// setLanguages(l);
+		setLangs(l);
+
 	}, [props.data]);
 
 	return (
@@ -72,11 +74,11 @@ function Resume(props) {
 				title={ResumeTitles[language]["Other Skills"]}
 				content={otherSkills}
 			/>
-			{/* <HeaderAndBars
+			<HeaderAndBars
         name="Languages"
         title={ResumeTitles[language]["Languages"]}
-        content={languages}
-      /> */}
+        content={langs}
+      />
 		</section>
 	);
 }

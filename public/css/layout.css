@@ -945,9 +945,10 @@ call-to-action .button {
 }
 #contact p.lead {
     text-align: center;
-	float: left;
+	float: center;
 	font: 18px/36px "opensans-light", sans-serif;
-	padding-right: 3%;
+	/* padding-right: 3%; */
+    width: 80%;
 }
 #contact .header-col {
 	padding-top: 6px;
