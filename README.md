@@ -1,4 +1,3 @@
 # React JS Resume Web App 
-Based on design by Tim Baker 
-### <a href="https://react-resume-template.herokuapp.com/">LIVE DEMO</a> 
+Based on <a href="https://react-resume-template.herokuapp.com/">design by Tim Baker</a> 
 
